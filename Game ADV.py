@@ -1,0 +1,116 @@
+import time
+import os
+print("Run 'start()' to START THE GAME. Or run 'info()' for HELP!")
+
+def info():
+    print("Do you really need help?")
+    time.sleep(2)
+    print("")
+    print("")
+    time.sleep(2)
+    print("Welp, get out of my game...")
+    time.sleep(2)
+    os.system('exit')
+
+def chapter1():
+    time.sleep(2)
+    print("")
+    print("")
+    print("")
+    time.sleep(2)
+    print("You have entered, chapter 2 of the story!")
+    print("")
+    print("")
+    time.sleep(2)
+    print("You encounter a wild sword when you wake up. Will you take it?")
+    sword_take=input("")
+    if sword_take == "yes":
+        print("YOU DIED")
+        os.system('exit')
+
+def story1():
+    time.sleep(2)
+    print("")
+    print("Ok... Welcome to this world of Pokemon....")
+    time.sleep(2)
+    print(".")
+    print(".")
+    print(".")
+    time.sleep(2)
+    print("Wait... This isn't Pokemon...?")
+    time.sleep(2)
+    print("")
+    print("Anyway.... Lets design your character?")
+    print("")
+    print("")
+    time.sleep(2)
+    print("Are you;")
+    print("1. Blonde haired, with blue eyes?")
+    time.sleep(1)
+    print("2. Black haired, with green eyes?")
+    print("or....")
+    time.sleep(2)
+    print("3. Blue haired, with fire red eyes?")
+    haircolor=input("CHOOSE 1, 2, or 3, THERE WILL BE NO CONFIRMATION FOR THIS...: ")
+    if haircolor == "1":
+      time.sleep(2)
+      print("OOF thats the wrong choice")
+      time.sleep(2)
+      os.system('CLS')
+    elif haircolor == "2":
+      time.sleep(2)
+      print("THATS THE WRONG CHOICE!")
+      time.sleep(2)
+      os.system('CLS')
+    else:
+      print("You have chosen the blue hair and fire red eyes!")
+      chapter1()
+              
+          
+
+def start():
+    time.sleep(2)
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    time.sleep(2)
+    print("Welcome, to this world of adventure, before we start. Could I please get your name?")
+    name=input("ENTER YOUR NAME: ")
+    print("")
+    time.sleep(2)
+    print("So... Your name is", name, "?")
+    confirm=input("PLEASE SAY YES TO CONFIRM OR NO TO CANCEL (make sure you put 'yes' or 'no' in lowercase or the code will crash...): ")
+    if confirm == "yes":
+        story1()
+    elif confirm == "no":
+          print("")
+          print("")
+          print("")
+          print("")
+          print("")
+          print("")
+          print("")
+          time.sleep(2)
+          print("Welcome, to this world of adventure, before we start. Could I please get your name?")
+          nameretry=input("ENTER YOUR NAME: ")
+          time.sleep(2)
+          print("")
+          print("")
+          print("")
+          print("So... Your name is", nameretry, "?")
+          confirm2=input("PLEASE SAY YES TO CONFIRM OR NO TO CANCEL!: ")
+          if confirm2 == "yes":
+              print("")
+              time.sleep(2)
+              print(story1())
+          elif confirm2 == "no":
+              print("")
+              time.sleep(2)
+              print("NOBODY CARES... THATS YOUR NAME NOW....")
+              time.sleep(2)
+              story1()
+              
+          
